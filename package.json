@@ -1,0 +1,52 @@
+{
+  "name": "anchor-visibility-observer-for-overlays-tooltips",
+  "version": "0.1.0",
+  "description": "Occlusion-aware anchor visibility observer and delegated tooltip utilities for complex overlay UIs.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wssazonov/anchor-visibility-observer-for-overlays-tooltips.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wssazonov/anchor-visibility-observer-for-overlays-tooltips/issues"
+  },
+  "homepage": "https://github.com/wssazonov/anchor-visibility-observer-for-overlays-tooltips#readme",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "check": "tsc --noEmit",
+    "preplayground": "npm run build",
+    "playground": "python3 -m http.server 4173",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "tooltip",
+    "overlay",
+    "intersectionobserver",
+    "occlusion",
+    "visibility",
+    "svg"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "jsdom": "^26.1.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}
