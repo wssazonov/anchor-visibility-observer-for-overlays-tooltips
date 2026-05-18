@@ -1,6 +1,6 @@
 {
   "installCommand": "npm install --include=dev",
   "buildCommand": "npm run build:playground",
-  "outputDirectory": "public-build",
+  "outputDirectory": "public",
   "cleanUrls": true
 }
