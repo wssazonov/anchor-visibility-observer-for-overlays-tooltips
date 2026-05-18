@@ -28,6 +28,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
+    "prepare": "npm run build",
     "check": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest"
