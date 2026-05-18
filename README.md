@@ -4,6 +4,12 @@ Occlusion-aware utilities for overlays and tooltips in complex UIs.
 
 This package solves a common problem: a tooltip stays visible even when its anchor is already hidden under a modal, sidebar, sticky panel, or another overlay. Instead of fighting `z-index` case by case, this library observes the real visibility of the anchor and reacts to overlap.
 
+## Live demo
+
+Try the playground here:
+
+[https://anchor-visibility-observer-for-over.vercel.app/](https://anchor-visibility-observer-for-over.vercel.app/)
+
 ## What it does
 
 - observes `HTMLElement` and `SVGElement` anchors
