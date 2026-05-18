@@ -10,6 +10,8 @@ Try the playground here:
 
 [https://anchor-visibility-observer-for-over.vercel.app/](https://anchor-visibility-observer-for-over.vercel.app/)
 
+The interactive demo app is maintained in a separate repository so this package repository can stay focused on library code, tests, and docs.
+
 ## What it does
 
 - observes `HTMLElement` and `SVGElement` anchors
@@ -129,36 +131,6 @@ npm run check
 npm run test
 npm run build
 ```
-
-## Playground
-
-For a quick manual check, run:
-
-```bash
-npm run build:playground
-npm run playground
-```
-
-Then open:
-
-```txt
-http://localhost:4173/playground/
-```
-
-The playground simulates the exact failure mode this package is meant to solve:
-
-- hover an anchor
-- open or close the right panel
-- the tooltip should disappear once the anchor becomes covered
-
-## Vercel deployment
-
-This repository includes a ready-to-serve static playground setup for Vercel:
-
-- `npm run build:playground` builds the library, bundles the playground into `playground/main.js`, and copies the deployable files into `public/`
-- `vercel.json` publishes `public/` as the output directory
-
-That matters because the playground should stay deployable as static files without relying on sibling folders outside `playground/`, and Vercel gets a conventional static output directory.
 
 ## Framework examples
 
