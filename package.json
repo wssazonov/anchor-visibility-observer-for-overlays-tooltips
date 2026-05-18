@@ -28,8 +28,9 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build:playground": "npm run build && mkdir -p playground/dist && cp dist/index.js playground/dist/index.js",
     "check": "tsc --noEmit",
-    "preplayground": "npm run build",
+    "preplayground": "npm run build:playground",
     "playground": "python3 -m http.server 4173",
     "test": "vitest run",
     "test:watch": "vitest"

@@ -129,6 +129,7 @@ npm run build
 For a quick manual check, run:
 
 ```bash
+npm run build:playground
 npm run playground
 ```
 
@@ -143,6 +144,15 @@ The playground simulates the exact failure mode this package is meant to solve:
 - hover an anchor
 - open or close the right panel
 - the tooltip should disappear once the anchor becomes covered
+
+## Vercel deployment
+
+This repository includes a ready-to-serve static playground setup for Vercel:
+
+- `npm run build:playground` builds the library and copies the ESM bundle into `playground/dist`
+- `vercel.json` publishes `playground/` as the output directory
+
+That matters because the playground is a consumer of the built package, not of raw `src/` files.
 
 ## Framework examples
 

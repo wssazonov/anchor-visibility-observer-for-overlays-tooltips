@@ -1,4 +1,4 @@
-import {bindDelegatedTooltip} from '../dist/index.js';
+import {bindDelegatedTooltip} from './dist/index.js';
 
 const diagramRoot = document.querySelector('#diagram-root');
 const tooltip = document.querySelector('#tooltip');
