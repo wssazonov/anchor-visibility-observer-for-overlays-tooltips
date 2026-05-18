@@ -8,7 +8,7 @@ This package solves a common problem: a tooltip stays visible even when its anch
 
 Try the playground here:
 
-[https://anchor-visibility-observer-for-over.vercel.app/](https://anchor-visibility-observer-for-over.vercel.app/)
+[https://anchor-visibility-observer-for-over-coral.vercel.app/](https://anchor-visibility-observer-for-over-coral.vercel.app/)
 
 The interactive demo app is maintained in a separate repository so this package repository can stay focused on library code, tests, and docs.
 
