@@ -28,7 +28,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "build:playground": "npm run build && mkdir -p playground/dist && cp dist/index.js playground/dist/index.js",
+    "build:playground": "npm run build && esbuild playground/app.js --bundle --format=esm --outfile=playground/main.js",
     "check": "tsc --noEmit",
     "preplayground": "npm run build:playground",
     "playground": "python3 -m http.server 4173",
@@ -45,6 +45,7 @@
   ],
   "devDependencies": {
     "@types/node": "^22.15.17",
+    "esbuild": "^0.25.4",
     "jsdom": "^26.1.0",
     "tsup": "^8.0.2",
     "typescript": "^5.8.3",

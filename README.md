@@ -149,10 +149,10 @@ The playground simulates the exact failure mode this package is meant to solve:
 
 This repository includes a ready-to-serve static playground setup for Vercel:
 
-- `npm run build:playground` builds the library and copies the ESM bundle into `playground/dist`
+- `npm run build:playground` builds the library and bundles the playground into a self-contained `playground/main.js`
 - `vercel.json` publishes `playground/` as the output directory
 
-That matters because the playground is a consumer of the built package, not of raw `src/` files.
+That matters because the playground should stay deployable as static files without relying on sibling folders outside `playground/`.
 
 ## Framework examples
 
